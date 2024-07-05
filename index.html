@@ -11,13 +11,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
         <div class="container">
-            <a class="navbar-brand" href="#">Arnaud Ruymaekers</a>
+            <a class="navbar-brand" href="/">Arnaud Ruymaekers</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,14 +32,17 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#eductation">Education</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    </li> -->
                 </ul>
                 
             </div>
@@ -84,9 +89,100 @@
                         <p>
                             My research focusses on model-based reinforcement learning to the field of olfactory navigation in turbulent environments. I mainly work on using the concept of Partially Observable Markov Decision Processes. I work on finding solutions to simulate the behaviors of animals in order to undertand better how their sense of smell work.
                         </p>
+                        <p>
+                            I finished a Master's Degree at the Università di Genova in March of 2024 after completing my thesis on olfactory navigation. Before that, I took part in the Data Science and Knowledge Engineering degree at Maastricht University. During that degree, I also took part in the Honour's program Ke@Work which allowed me to gain some experience working for a company, Open Line. I spent 2 years as an intern over there and completed my Bachelor's thesis there. Following this, I continued working as a consultant for the company for the following three years focussing on Business Intelligence as a Data Engineer.
+                        </p>
+                        <p>
+                            Overall, I really like programming, and am curious about many topics computer science related. During my Bachelor's degree I mainly used Java as a programming language. But following this, during my internship at Open Line, I got my hands on Python and database manipulation with SQL. I also learned to handle big amounts of data on daily using the ETL tools provided within the Microsoft Azure suite. Namely I worked using the Databricks platform where I got to work with the PySpark toolbox. Within my time at openline, I also learned a great deal about Source Control and development cycles. I got to help build a strong DevOps release pipeline that aimed at maximizing the data-availability for the company while allowing the Business Intelligence team of developping with as much peace of mind as possible.
+                        </p>
                     </div>
                 </div>
             </div>
+    </section>
+
+    <!-- experience section-->
+    <section id="eductation">
+        <div class="container section-container">
+            <h1 class="text-center">Eductation</h1>
+            <div class="row mt-4">
+                <div class="col-lg-32">
+                    <ul class="timeline">
+                        <li class="event" data-date="March 2024 - Now">
+                            <div class="event-logo"><img src="images/MaLGa_verticale_UniGe.png" alt=""></div>
+                            <div class="event-content">
+                                <h3>Research Contract</h3>
+                                <h5>Malga (Machine Learning Genova Center) at Università di Genova</h5>
+                                <p>
+                                    I work within the PiMLB unit (Physics informed Machine Learning for biological Behavior) of Malga (Machine Learning Genova Center). Within this group, I work on olfactory navigation and, more particularly, model-based algorithms. These algorithms attempt to find optimal strategies for agents to find the source of an odor.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="event" data-date="September 2021 - March 2024">
+                            <div class="event-logo"><img src="images/LOGO-universita-GENOVA.jpg" alt=""></div>
+                            <div class="event-content">
+                                <h3>Master of Science (MSc) in Computer Science</h3>
+                                <h5>Università di Genova</h5>
+                                <p>
+                                    <b>Track:</b> Data Science & Engineering - Artificial Intelligence
+                                </p>
+                                <p>
+                                    During my Master's degree, I deepened my knowledge in the fields of data science and machine learning. I got to learn about topics such as Computer Vision, Natural Language Processing, Speach Processing and Recognition, Multi-Agent Systems, or Computer Games. The various project I worked on for these various classes can be found on the <a href="/projects/">Project Page</a>
+                                </p>
+                                <p>
+                                    I joined the PiMLB unit (Physics informed Machine Learning for biological Behavior) of the Malga (Machine Learning Genova Center) lab to work on my Master's thesis.
+                                </p>
+                                <p>
+                                    <b>Thesis Title:</b> "Navigating by Scent: A Model-Based Approach to Olfactory Navigation using Partially Observable Markov Decision Processes" (Supervisors: Prof. A. Seminara; Prof. A. Verri) <a href="/docs/Master_Thesis___Olfactory_Navigation (Final).pdf" target="_blank">(Open in new tab)</a> <br>
+                                    <b>Final Grade:</b> 110/110 (cum Laude) <br>
+                                    <b>Short Abstract:</b> 
+                                </p>
+                            </div>
+                        </li>
+                        <li class="event" data-date="September 2017 - August 2020">
+                            <div class="event-logo"><img src="images/maastricht_university_logo.png" alt=""></div>
+                            <div class="event-content">
+                                <h3>Bachelor of Science (BSc) in Data Science and Knowledge Engineering</h3>
+                                <h5>Maastricht University</h5>
+                                <p>
+                                    During my bachelor, I learned the fundamental of Computer Science and applied Mathematics to this domain. I also got to learn the fields of <b>Data Science</b> and <b>Machine Learning</b>. <br>
+                                    The programming language I learned within this degree were: Java, SQL, Matlab, and Python.
+                                </p>
+                                <p>
+                                    I also took part in the Honour's program <b>Ke@Work</b> that lasted for two year and where I was placed at a company (Open Line) as an intern. My Bachelor Thesis was also written as part of this program and applied to the needs of the company.
+                                </p>
+                                <p>
+                                    <b>Thesis Title:</b> "Pareto Optimal State Search Using Simulated Annealing" (Supervisor: Dr. G. Stamoulis)<br>
+                                    <b>Final Grade:</b> 8.43/10
+                                </p>
+                            </div>
+                        </li>
+                        <li class="event" data-date="September 2016 - June 2017">
+                            <div class="event-logo"></div>
+                            <div class="event-content">
+                                <h3>Exchange Year in the USA</h3>
+                                <h5>Shakopee High School</h5>
+                                <p>
+                                    Exchange student for a year with the organization WEP. I took part of the Senior year in High School to learn to become fluent in English in order to pursue my studies at the Maastricht University. <br>
+                                    During this school year, I took classes of AP Calculus, Web Design, among other. <br>
+                                    I also took part in the Robotics Club and the Swimming team.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="event" data-date="September 2012 - June 2016">
+                            <div class="event-logo"></div>
+                            <div class="event-content">
+                                <h3>High School</h3>
+                                <h5>Athenée Royal de Waremme</h5>
+                                <p>
+                                    <b>Option:</b> Science with advanced Math (8h/week) <br>
+                                    During my time in High School, I took part in the Science track with an advanced Math placement. Along this, I was also part of an advanced Dutch-language program with which I had more classes in Dutch than the regular program.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- experience section-->
@@ -96,21 +192,33 @@
             <div class="row mt-4">
                 <div class="col-lg-32">
                     <ul class="timeline">
-                        <li class="event" data-date="March 2024 - Now">
-                            <h3>Research Contract</h3>
-                            <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
+                        <li class="event" data-date="September 2020 - May 2023">
+                            <div class="event-logo"><img src="images/open_line_logo.jpeg" alt=""></div>
+                            <div class="event-content">
+                                <h3>Open Line</h3>
+                                <p>BLA</p>
+                            </div>
                         </li>
-                        <li class="event" data-date="2:30 - 4:00pm">
-                            <h3>Master's degree</h3>
-                            <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP &amp; Busta Rhymes as an opening show.</p>
+                        <li class="event" data-date="September 2018 - August 2020">
+                            <div class="event-logo"><img src="images/maastricht_university_logo.png" alt=""></div>
+                            <div class="event-content">
+                                <h3>Honour's Program - Ke@Work</h3>
+                                <p>BLA</p>
+                            </div>
                         </li>
-                        <li class="event" data-date="5:00 - 8:00pm">
-                            <h3>Main Event</h3>
-                            <p>This is where it all goes down. You will compete head to head with your friends and rivals. Get ready!</p>
+                        <li class="event" data-date="September 2018 - August 2020">
+                            <div class="event-logo"><img src="images/maastricht_university_logo.png" alt=""></div>
+                            <div class="event-content">
+                                <h3>Student Association - Board Member</h3>
+                                <p>BLA</p>
+                            </div>
                         </li>
-                        <li class="event" data-date="8:30 - 9:30pm">
-                            <h3>Closing Ceremony</h3>
-                            <p>See how is the victor and who are the losers. The big stage is where the winners bask in their own glory.</p>
+                        <li class="event" data-date="January 2018 - August 2020">
+                            <div class="event-logo"><img src="images/maastricht_university_logo.png" alt=""></div>
+                            <div class="event-content">
+                                <h3>Student Ambassador</h3>
+                                <p>BLA</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -118,100 +226,23 @@
         </div>
     </section>
 
-    <!-- services section-->
-    <!-- <section id="services">
+
+    <!-- projects section-->
+    <section id="projects">
         <div class="container section-container">
-            <h1 class="text-center">Services</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class="fas servicesIcon fa-clock"></i>
-                            <h4 class="card-title mt-3">Website Development</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-layer-group'></i>
-                            <h4 class="card-title mt-3">Website Design</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='far servicesIcon fa-check-circle'></i>
-                            <h4 class="card-title mt-3">Website Deployment</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-search'></i>
-                            <h4 class="card-title mt-3">SEO</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-shield-alt'></i>
-                            <h4 class="card-title mt-3">DevOps</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-wrench'></i>
-                            <h4 class="card-title mt-3">QA</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- portfolio section-->
-    <section id="portfolio">
-        <div class="container section-container">
-            <h1 class="text-center">Portfolio</h1>
+            <h1 class="text-center">Projects</h1>
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="images/Olfactory_Navigation_Illustration.png" alt="Card image" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">YouTube Clone</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h4 class="card-title">Olfactory Navigation Framework</h4>
+                            <p class="card-text">
+                                A project all about olfactory navigation. Allows the definition of agents, building olfactory environments, run rimulations, and analyze results.
+                            </p>
                             <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                                <a href="/projects/" class="btn btn-success">More Details</a>
+                                <a href="https://github.com/PimLb/olfactory-navigation" class="btn btn-success"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -219,12 +250,15 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="images/simulation_trajectory.png" alt="Card image" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Quiz App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h4 class="card-title">POMDP PBVI Exploration</h4>
+                            <p class="card-text">
+                                A project exploring the concepts of Partially-Observable Markov Decision Processes (POMDP) along with how to solve them through the Point-Based Value Iteration (PBVI) algorithms.
+                            </p>
                             <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                                <a href="/projects/" class="btn btn-success">More Details</a>
+                                <a href="https://github.com/PimLb/POMDP_PBVI_Exploration" class="btn btn-success"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -232,12 +266,13 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="images/MAS_COVID_Sim.png" alt="Card image" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Product Landing Page</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h4 class="card-title">Multi-Agent Covid Simulation</h4>
+                            <p class="card-text">A project exploring the building of Multi-Agent simulation in JAVA with the package JADE.</p>
                             <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                                <a href="/projects/" class="btn btn-success">More Details</a>
+                                <a href="https://github.com/thebot002/JADE-Covid-Simulation" class="btn btn-success"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -245,68 +280,19 @@
             </div>
             <br>
             <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Messaging Service</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Twitter Clone</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Blog App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="text-center">
+                    <a href="#" class="btn btn-success">More Projects</a>
                 </div>
             </div>
     </section>
 
     <!-- contact section-->
-    <section id="contact">
+    <!-- <section id="contact">
         <div class="container section-container contactContent">
             <h1 class="text-center">Contact Me</h1>
 
             <div class="row mt-4">
-                <div class="col-lg-6">
-                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
-                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
-                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=new+york&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                            </iframe>
-                        </div>
-                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
-                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
-                        </style>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- form fields -->
+                <div class="col-lg-6 contact-me">
                     <form>
                         <input type="text" class="form-control form-control-lg" placeholder="Name">
                         <input type="email" class="form-control mt-3" placeholder="Email">
@@ -316,22 +302,20 @@
                         </div>
                     </form>
                     <button type="button" class="btn btn-success mt-3">Contact Me</button>
-                    
                 </div>
 
             </div>
         </div>
-    </section>
+    </section> -->
+
     <!-- footer section-->
     <footer id="footer">
         <div class="container-fluid">
             <!-- social media icons -->
             <div class="social-icons mt-4">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+                <a href="mailto:arnaudr85@gmail.com"><i class="bi bi-envelope"></i></a>
+                <a href="https://github.com/thebot002" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/arnaud-ruymaekers" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
     </footer>

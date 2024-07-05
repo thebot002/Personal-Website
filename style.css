@@ -1,3 +1,8 @@
+/* Justification */
+p {
+    text-align: justify;
+}
+
 /* display background color black on navbar scroll */
 .navbarScroll.navbarDark {
     background-color: black;
@@ -16,6 +21,7 @@
 }
 .hero_desc {
     font-size: 2rem;
+    text-align: center;
 }
 .hero-text {
     text-align: center;
@@ -24,6 +30,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+
+.contact-me {
+    margin: auto;
 }
 
 /* spacing on all sections */
@@ -63,15 +73,19 @@
     border: 1px solid #008000;
 }
 
+.card-text {
+    text-align: left;
+}
+
 /* social media icons styling */
 .social-icons {
     font-size: 36px;
     cursor: pointer;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+.bi:hover,.fa:hover {
     color: #008000;
 }
-.fab {
+.fab, .bi {
     color: #000000;
 }
 /* footer styling */
@@ -90,7 +104,6 @@
     letter-spacing: 0.2px;
     position: relative;
     line-height: 1.4em;
-    font-size: 1.03em;
     padding: 50px;
     list-style: none;
     text-align: left;
@@ -101,6 +114,12 @@
     .timeline {
         max-width: 98%;
         padding: 25px;
+    }
+}
+
+@media (min-width: 767px) {
+    .timeline {
+        margin-left: 300px;
     }
 }
 
@@ -123,6 +142,11 @@
     position: relative;
 }
 
+.timeline h5 {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 @media (max-width: 767px) {
     .timeline .event {
         padding-top: 30px;
@@ -143,7 +167,7 @@
 }
 
 .timeline .event:before {
-    left: -207px;
+    left: -277px;
     content: attr(data-date);
     text-align: right;
     font-weight: 100;
@@ -194,4 +218,17 @@
 .rtl .timeline .event::after {
     left: 0;
     right: -55.8px;
+}
+
+.event {
+    display: flex;
+    flex-direction: row;
+}
+
+.event-content {
+    margin-left: 20px;
+}
+
+.event-logo img {
+    width: 50px;
 }
