@@ -3,14 +3,14 @@
 <head>
   <title>Arnaud Ruymaekers - Research Portfolio</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- linking css file -->
-  <link rel="stylesheet" href="style.css">
   <!-- bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
@@ -32,7 +32,7 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#eductation">Education</a>
+                        <a class="nav-link" href="#education">Education</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#experience">Experience</a>
@@ -62,8 +62,11 @@
 
     <!-- about section-->
     <section id="about">
+        <div class="section-header">
+            <h1 class="text-center">About me</h1>
+        </div>
         <div class="container section-container">
-            <h1 class="text-center">About Me</h1>
+            <!-- <h1 class="text-center">About Me</h1> -->
             <div class="row mt-4">
                 <div class="col-lg-4">
                     <img src="images/Profile_Picture.jpg" class= "imageAboutPage" alt="">
@@ -101,14 +104,18 @@
     </section>
 
     <!-- experience section-->
-    <section id="eductation">
+    <section id="education">
+        <div class="section-header">
+            <h1 class="text-center">Education</h1>
+        </div>
         <div class="container section-container">
-            <h1 class="text-center">Eductation</h1>
-            <div class="row mt-4">
+            <div class="row">
                 <div class="col-lg-32">
                     <ul class="timeline">
                         <li class="event" data-date="March 2024 - Now">
-                            <div class="event-logo"><img src="images/MaLGa_verticale_UniGe.png" alt=""></div>
+                            <div class="event-logo">
+                                <a href="https://malga.unige.it/"><img src="images/MaLGa_verticale_UniGe.png" alt=""></a>
+                            </div>
                             <div class="event-content">
                                 <h3>Research Contract</h3>
                                 <h5>Malga (Machine Learning Genova Center) at Università di Genova</h5>
@@ -118,7 +125,9 @@
                             </div>
                         </li>
                         <li class="event" data-date="September 2021 - March 2024">
-                            <div class="event-logo"><img src="images/LOGO-universita-GENOVA.jpg" alt=""></div>
+                            <div class="event-logo">
+                                <a href="https://unige.it/"><img src="images/LOGO-universita-GENOVA.jpg" alt=""></a>
+                            </div>
                             <div class="event-content">
                                 <h3>Master of Science (MSc) in Computer Science</h3>
                                 <h5>Università di Genova</h5>
@@ -139,7 +148,9 @@
                             </div>
                         </li>
                         <li class="event" data-date="September 2017 - August 2020">
-                            <div class="event-logo"><img src="images/maastricht_university_logo.png" alt=""></div>
+                            <div class="event-logo">
+                                <a href="https://www.maastrichtuniversity.nl/"><img src="images/maastricht_university_logo.png" alt=""></a>
+                            </div>
                             <div class="event-content">
                                 <h3>Bachelor of Science (BSc) in Data Science and Knowledge Engineering</h3>
                                 <h5>Maastricht University</h5>
@@ -187,36 +198,71 @@
 
     <!-- experience section-->
     <section id="experience">
-        <div class="container section-container">
+        <div class="section-header">
             <h1 class="text-center">Experience</h1>
-            <div class="row mt-4">
+        </div>
+        <div class="container section-container">
+            <div class="row">
                 <div class="col-lg-32">
                     <ul class="timeline">
                         <li class="event" data-date="September 2020 - May 2023">
-                            <div class="event-logo"><img src="images/open_line_logo.jpeg" alt=""></div>
+                            <div class="event-logo">
+                                <a href="https://openline.nl/"><img src="images/open_line_logo.jpeg" alt=""></a>
+                            </div>
                             <div class="event-content">
-                                <h3>Open Line</h3>
-                                <p>BLA</p>
+                                <h3>ICT Consultant</h3>
+                                <h5>Open Line</h5>
+                                <p>
+                                    I helped maintain and further develop the <b>Business Intelligence (BI)</b> infrastructure of the company using <b>Microsoft Azure</b> services. The BI team was tasked with the <b>Extract, Transform, and Load (ETL)</b> process of the data of the company. The ETL process was built using Databricks, DataFactory and the SSIS package of Microsoft Visual Studio. 
+                                </p>
+                                <p>
+                                    I also built software frameworks to speed up the processing of data to the various databases. This framework was also meant to simplify the daily operations of the BI team. 
+                                </p>
+                                <p>
+                                    I also managed and improved the <b>CICD pipeline</b> within <b>DevOps</b> of the team to ensure optimal and smooth deployment of new features
+                                </p>
                             </div>
                         </li>
                         <li class="event" data-date="September 2018 - August 2020">
-                            <div class="event-logo"><img src="images/maastricht_university_logo.png" alt=""></div>
+                            <div class="event-logo">
+                                <a href="https://openline.nl/"><img src="images/open_line_logo.jpeg" alt=""></a>
+                                <a href="https://www.maastrichtuniversity.nl/"><img src="images/maastricht_university_logo.png" alt=""></a>
+                            </div>
                             <div class="event-content">
-                                <h3>Honour's Program - Ke@Work</h3>
-                                <p>BLA</p>
+                                <h3>Intern - Honour's Program (Ke@Work)</h3>
+                                <h5>Open Line and Maastricht University</h5>
+                                <p>
+                                    As part of the Honours program of the Data Science and Knowledge Engineering Bachelor of Maastricht University I integrated the <b>Business Intelligence (BI)</b> team of Open Line. During my internship I undertook projects related to <b>Data Science</b> and <b>Optimization</b>.
+                                </p>
+                                <p>
+                                    I developed an model for <b>Time-Series forecasting</b> applied to the forecasting of the amount of calls the various teams would receive in given periods.
+                                </p>
+                                <p>
+                                    My largest project there, which was also my Bachelor's thesis, was an <b>Operation Research</b> problem. I got to develop an <b>Integer Linear Programming (ILP)</b> solution to suggest improvements within the virtualization of storage. These suggestions would be monitored regularly to apply the changes. The suggestions provided by the algorithm allowed for a considerable amount of money to be saved on a monthly basis.
+                                </p>
+                                <p>
+                                    The solutions that I proposed also had to be efficient enough to be run on a daily basis as part of the morning <b>Extract, Transform, and Load (ETL)</b> process. Along this, they were included within this process in order to benefit from fresh data every data and to provide the most up-to-date suggestions ad predictions.
+                                </p>
                             </div>
                         </li>
                         <li class="event" data-date="September 2018 - August 2020">
-                            <div class="event-logo"><img src="images/maastricht_university_logo.png" alt=""></div>
+                            <div class="event-logo">
+                                <a href="https://msvincognito.nl/"><img src="images/Incognito_main_logo.png" alt=""></a>
+                                <a href="https://www.maastrichtuniversity.nl/"><img src="images/maastricht_university_logo.png" alt=""></a>
+                            </div>
                             <div class="event-content">
-                                <h3>Student Association - Board Member</h3>
+                                <h3>Treasurer - Student Association Board Member</h3>
+                                <h5>MSV Incognito - Maastricht University</h5>
                                 <p>BLA</p>
                             </div>
                         </li>
                         <li class="event" data-date="January 2018 - August 2020">
-                            <div class="event-logo"><img src="images/maastricht_university_logo.png" alt=""></div>
+                            <div class="event-logo">
+                                <a href="https://www.maastrichtuniversity.nl/"><img src="images/maastricht_university_logo.png" alt=""></a>
+                            </div>
                             <div class="event-content">
                                 <h3>Student Ambassador</h3>
+                                <h5>Maastricht University</h5>
                                 <p>BLA</p>
                             </div>
                         </li>
@@ -229,12 +275,16 @@
 
     <!-- projects section-->
     <section id="projects">
-        <div class="container section-container">
+        <div class="section-header">
             <h1 class="text-center">Projects</h1>
+        </div>
+        <div class="container section-container">
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card">
-                        <img class="card-img-top" src="images/Olfactory_Navigation_Illustration.png" alt="Card image" style="width:100%">
+                        <div class="card-image">
+                            <img src="images/Olfactory_Navigation_Illustration.png" alt="">
+                        </div>
                         <div class="card-body">
                             <h4 class="card-title">Olfactory Navigation Framework</h4>
                             <p class="card-text">
@@ -250,7 +300,9 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/simulation_trajectory.png" alt="Card image" style="width:100%">
+                        <div class="card-image">
+                            <img src="images/simulation_trajectory.png" alt="">
+                        </div>
                         <div class="card-body">
                             <h4 class="card-title">POMDP PBVI Exploration</h4>
                             <p class="card-text">
@@ -266,7 +318,9 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/MAS_COVID_Sim.png" alt="Card image" style="width:100%">
+                        <div class="card-image">
+                            <img src="images/MAS_COVID_Sim.png" alt="">
+                        </div>
                         <div class="card-body">
                             <h4 class="card-title">Multi-Agent Covid Simulation</h4>
                             <p class="card-text">A project exploring the building of Multi-Agent simulation in JAVA with the package JADE.</p>
@@ -281,7 +335,7 @@
             <br>
             <div class="row">
                 <div class="text-center">
-                    <a href="#" class="btn btn-success">More Projects</a>
+                    <a href="/projects/" class="btn btn-success">More Projects</a>
                 </div>
             </div>
     </section>
