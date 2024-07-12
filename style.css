@@ -277,10 +277,6 @@ a:hover {
 /* END of ALL Timeline shit */
 
 /* Project cards styles */
-/* #project_cards {
-    padding-top: 20px;
-} */
-
 #project_cards div.container div.card {
     padding: 20px;
     flex-direction: row;
