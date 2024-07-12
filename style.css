@@ -270,3 +270,37 @@ a:hover {
     text-decoration-color: black;
 }
 /* END of ALL Timeline shit */
+
+/* Project cards styles */
+/* #project_cards {
+    padding-top: 20px;
+} */
+
+#project_cards div.container div.card {
+    padding: 20px;
+    flex-direction: row;
+}
+
+#project_cards div.container div.card .card-image {
+    height: 200px;
+}
+
+#project_cards div.container div.card img {
+    display: auto;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+#project_cards div.container div.card div.card-tags {
+    display: flex;
+    flex-direction: row;
+}
+
+#project_cards div.container div.card .tag {
+    margin: 5px;
+    padding: 2px 10px 2px 10px;
+    border: 1px solid #0A0621;
+    border-radius: 15px;
+}
