@@ -1,5 +1,3 @@
-
-
 var rawFile = new XMLHttpRequest();
 rawFile.open("GET", 'projects_data.csv', false);
 rawFile.onreadystatechange = function () {
@@ -19,7 +17,7 @@ rawFile.onreadystatechange = function () {
                 $("#project_" + p_id).append('<div class="col-lg-8 card-content"></div>')
 
                 // Column
-                $("#project_" + p_id + " div.card-margin").append('<div class="card-image"><img src="' + row['Image'] + '" alt="' + row['Name'] + ' illustration' + '"></div>')
+                $("#project_" + p_id + " div.card-margin").append('<div class="card-image"><img src="' + 'images/' + row['Image'] + '" alt="' + row['Name'] + ' illustration' + '"></div>')
                 
                 // Tags
                 const tags = row['Tags'].split(" ")
@@ -31,8 +29,9 @@ rawFile.onreadystatechange = function () {
                 })
 
                 // Content
+                const content = row['FullDescription'].replaceAll('<br>','</p><p>')
                 $("#project_" + p_id + " div.card-content").append('<h2>' + row['Name'] + '</h2>')
-                $("#project_" + p_id + " div.card-content").append('<p>' + row['FullDescription'] + '</p>')
+                $("#project_" + p_id + " div.card-content").append('<p>' + content + '</p>')
                 $("#project_" + p_id + " div.card-content").append('<div class="text-center"><a href="' + row['Github'] + '" class="btn"><i class="bi bi-github"></i> Github Link</a></div>')
 
 

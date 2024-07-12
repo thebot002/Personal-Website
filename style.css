@@ -118,6 +118,11 @@ a:hover {
     text-decoration-color: hsl(var(--hue), 50%, 45%);
 }
 
+#projects .card-body a {
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
 /* ALL Timeline shit */
 .timeline {
     border-left: 3px solid #0A0621;

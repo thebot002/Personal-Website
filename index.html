@@ -24,7 +24,11 @@
     "alternateName" : ["aruymaekers", "AR", "Arnaud Ruymaekers Research Portfolio"],
     "url" : "https://aruymaekers.com/"
   }
-</script>
+  </script>
+
+  <!-- JS -->
+  <script src="../script/jquery-3.7.1.min.js"></script>
+  <script src="../script/jquery.csv.js"></script>
 </head>
 
 <body>
@@ -122,59 +126,7 @@
             <h1 class="text-center">Projects</h1>
         </div>
         <div class="container section-container">
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/Olfactory_Navigation_Illustration.png" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Olfactory Navigation Framework</h4>
-                            <p class="card-text">
-                                A project all about olfactory navigation. Allows the implementation of agents, building olfactory environments, run rimulations, and analyze results.
-                            </p>
-                            <div class="text-center">
-                                <a href="/projects/" class="btn">More Details</a>
-                                <a href="https://github.com/PimLb/olfactory-navigation" class="btn"><i class="bi bi-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <div class="card-image">
-                            <img src="images/simulation_trajectory.png" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">POMDP PBVI Exploration</h4>
-                            <p class="card-text">
-                                A project exploring the concepts of Partially-Observable Markov Decision Processes (POMDP) along with how to solve them through the Point-Based Value Iteration (PBVI) algorithms.
-                            </p>
-                            <div class="text-center">
-                                <a href="/projects/" class="btn">More Details</a>
-                                <a href="https://github.com/PimLb/POMDP_PBVI_Exploration" class="btn"><i class="bi bi-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <div class="card-image">
-                            <img src="images/MAS_COVID_Sim.png" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Multi-Agent Covid Simulation</h4>
-                            <p class="card-text">A project exploring the building of Multi-Agent simulation in JAVA with the package JADE.</p>
-                            <div class="text-center">
-                                <a href="/projects/" class="btn">More Details</a>
-                                <a href="https://github.com/thebot002/JADE-Covid-Simulation" class="btn"><i class="bi bi-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="row cards"></div>
             <br>
             <div class="row">
                 <div class="text-center">
@@ -395,6 +347,7 @@
 
     <!-- load javascript after loading all html content -->
     <script src="script/script.js"></script>
+    <script src="script/build_highligh_project_cards.js"></script>
 
 </body>
 
